@@ -72,6 +72,14 @@ var app = function(){
 				}
 			}
 
+			var exampleInfo = function(){
+				var divvy = document.createElement('div');
+				divvy.innerHTML = "<p>I am some fascinating facts</p>";
+				var container = document.querySelector("#container");
+				container.appendChild(divvy);
+				divvy.className = "fact-box";
+			}
+
 			var move = function(destination, event){
 				var scroller = function(destination){
 				
@@ -105,7 +113,8 @@ var app = function(){
 			move(destination, event);
 			console.log("back");
 		}
-		scrollMaster(inputDestination, dialogue);
+		// scrollMaster(inputDestination, dialogue);
+		scrollMaster(400, exampleInfo);
 	}
 }
 window.onload = app;
