@@ -68,7 +68,7 @@ var app = function(){
 
 					console.log(view.scrollLeft);
 				} else {
-					view.scrollLeft = 0;
+					// view.scrollLeft = 0;
 					console.log(view.scrollLeft);
 				}
 
